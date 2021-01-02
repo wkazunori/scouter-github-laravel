@@ -27,7 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //return view('posts.create');
+        return view('posts.create');
     }
 
     /**
@@ -38,11 +38,11 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //$post = new Post;
-        //$post->title = $request->title;
-        //$post->body = $request->body;
-        //$post->save();
-        //return redirect('/posts');
+        $post = new Post;
+        $post->title = $request->title;
+        $post->body = $request->body;
+        $post->save();
+        return redirect('/posts');
     }
 
     /**
@@ -53,8 +53,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //$post = Post::find($id);
-        //return view('posts.show', ['post' => $post]);
+        $post = Post::find($id);
+        return view('posts.show', ['post' => $post]);
     }
 
     /**
