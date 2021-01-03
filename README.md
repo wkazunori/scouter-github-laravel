@@ -8,7 +8,7 @@
 ## 開発環境のセットアップ手順
 ```
 composer install
-cp .env.example .env
+cp .env.example .env  #データベースへの接続情報を適切に変更して下さい
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
