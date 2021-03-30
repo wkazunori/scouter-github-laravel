@@ -120,7 +120,6 @@ class ReservationController extends Controller
     {
         $reservation = Reservation::find($request->id);
         if (Auth::user()->is_administrator || $reservation->user->id == Auth::id()) {
-
             // HTMLの input type="datetime-local" で表示するために 半角スペースを T に置換
             $reservation->start_time = str_replace(' ', 'T', $reservation->start_time);
             $reservation->end_time = str_replace(' ', 'T', $reservation->end_time);
