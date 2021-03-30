@@ -36,20 +36,6 @@
       ],
       "value": ""
     }, {
-      "id": "4ac6147d-4a91-42f8-abe1-06531515bc68",
-      "comment": "",
-      "command": "click",
-      "target": "id=user_name_id",
-      "targets": [
-        ["id=user_name_id", "id"],
-        ["name=user_name_id", "name"],
-        ["css=#user_name_id", "css:finder"],
-        ["xpath=//input[@id='user_name_id']", "xpath:attributes"],
-        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "5c1a5d5c-edc8-4c88-a20e-3d9b61117450",
       "comment": "",
       "command": "verifyElementPresent",
