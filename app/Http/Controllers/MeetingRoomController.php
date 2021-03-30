@@ -69,11 +69,11 @@ class MeetingRoomController extends Controller
                 'name' => 'required|max:255',
                 'max_use_hour' => 'nullable|int',
                 'needs_approval' => 'required|boolean',
-            ],
+                ],
                 [],
                 [
                 'name' => '会議室名',
-            ]
+                ]
             );
 
             $meetingRoom = new MeetingRoom();
@@ -125,11 +125,11 @@ class MeetingRoomController extends Controller
                 'name' => 'required|max:255',
                 'max_use_hour' => 'nullable|int',
                 'needs_approval' => 'required|boolean',
-            ],
+                ],
                 [],
                 [
                 'name' => '会議室名',
-            ]
+                ]
             );
 
             MeetingRoom::where('id', $request->id)
