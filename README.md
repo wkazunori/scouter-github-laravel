@@ -12,4 +12,5 @@ cp .env.example .env  #データベースへの接続情報を適切に変更し
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
+php artisan serve # http://127.0.0.1:8000 でアプリにアクセスができます
 ```
